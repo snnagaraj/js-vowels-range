@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name1="Nagaraj";
+    let name2="Naga";
+    let count1=0;
+    let count2=0;
+
+    result1=name1.toLocaleLowerCase();
+    result2=name2.toLocaleLowerCase();
+
+    for(i=0;i<name1.length;i++){
+      if(name1[i]=="a" || name1[i]=="e"|| name1[i]=="i" || name1[i]=="o"|| name1[i]=="u"){
+         count1++;
+      }
+    }
+    for(i=0;i<name2.length;i++){
+      if(name2[i]=="a" || name2[i]=="e"|| name2[i]=="i" || name2[i]=="o"|| name2[i]=="u"){
+         count2++;
+      }
+    }
+    if(count1>count2){
+      console.log("Nagaraj",count1);
+    }
+    else if(count1<count2){
+      console.log("Naga",count2);
+    }
+    else{
+      console.log(count1 + count2);
+    }
+    </script>
+</body>
+</html>
